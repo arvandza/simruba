@@ -28,7 +28,11 @@
                                             {{ $item->quantity }}</p>
 
                                         <p class="mb-2 text-muted" style="text-align: justify">
-                                            {{ $item->description }}
+                                            @if ($item->description != null)
+                                                Warna: Putih - {{ $item->type }}
+                                            @else
+                                                Warna: Biru - {{ $item->type }}
+                                            @endif
                                         </p>
                                     </div>
                                     <div class="time-slots mt-3">

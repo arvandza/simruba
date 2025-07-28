@@ -25,7 +25,7 @@
                                     <div class="room-details">
                                         <p class="mb-2 d-flex align-items-center"><i data-feather="users"
                                                 class="icon-sm me-2"></i>Kapasitas:
-                                            {{ $item->capacity }}</p>
+                                            {{ $item->capacity }} Mahasiswa</p>
 
                                         <p class="mb-2 text-muted" style="text-align: justify">
                                             {{ $item->description }}

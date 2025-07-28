@@ -44,7 +44,7 @@
                                         <td>
                                             {{ $item->description }}
                                         </td>
-                                        <td>{{ $item->capacity }}</td>
+                                        <td>{{ $item->capacity }} Mahasiswa</td>
 
                                         <td>
                                             @if ($item->status === 'available')

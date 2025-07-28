@@ -43,7 +43,7 @@
                             <h5 class="card-title">{{ $room->name }}</h5>
                             <p class="card-text"><strong>Status:</strong> <span class="badge bg-success">Tersedia</span>
                             </p>
-                            <p class="card-text"><strong>Kapasitas:</strong> {{ $room->capacity }}</p>
+                            <p class="card-text"><strong>Kapasitas:</strong> {{ $room->capacity }} Mahasiswa</p>
                             <p class="card-text"><strong>Deskripsi:</strong> {{ $room->description }}</p>
                             <a href="{{ route('roomlist.edit', $room->id) }}" class="btn btn-primary mt-2">Pinjam
                                 Sekarang</a>

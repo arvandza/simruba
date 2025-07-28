@@ -40,7 +40,7 @@ class LoginController extends Controller
             $user = Auth::user();
 
             if ($user->role->name === 'mahasiswa') {
-                return redirect()->route('mahasiswa.index');
+                return redirect()->route('rooms.available');
             } else if ($user->role->name === 'admin') {
                 return redirect()->route('admin.dashboard');
             }

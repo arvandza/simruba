@@ -26,7 +26,8 @@
                                     <th>No</th>
                                     <th>Gambar</th>
                                     <th>Nama Barang</th>
-                                    <th>Deskripsi</th>
+                                    <th>Warna</th>
+                                    <th>Tipe</th>
                                     <th>Kuantitas</th>
                                     <th>Status</th>
                                     <th>Aksi</th>
@@ -42,7 +43,15 @@
                                             {{ $item->name }}
                                         </td>
                                         <td>
-                                            {{ $item->description }}
+                                            @if ($item->description === null)
+                                                -
+                                            @else
+                                                Putih
+                                            @endif
+
+                                        </td>
+                                        <td>
+                                            {{ $item->type }}
                                         </td>
                                         <td>{{ $item->quantity }}</td>
 
